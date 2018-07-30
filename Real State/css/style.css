@@ -1,0 +1,221 @@
+/* ========globsl CSS======*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.col-1{ width: 8.33%; }
+.col-2{ width: 16.66%; }
+.col-3{ width: 25%; }
+.col-4{ width: 33.33%; }
+.col-5{ width: 41.66%; }
+.col-6{ width: 50%; }
+.col-7{ width: 58.33%; }
+.col-8{ width: 66.66%; }
+.col-9{ width: 75%; }
+.col-10{ width: 83.33%; }
+.col-11{ width: 91.66%; }
+.col-12{ width: 100%; }
+
+
+[class*='col-']{
+    float: left;
+    /*border: 1px solid red;*/
+}
+.row:after{
+    content: ' ';
+    clear: both;
+    display: block;
+}
+.container{
+    width: 85%;
+    height: auto;
+    margin: 0 auto;
+}
+.pr-2per{ padding-right: 2%; }
+/*======global CSS======*/
+
+/*========menu CSS=======*/
+
+nav{
+    min-height: 50px;
+    padding: 5px 5px 5px 0;
+    background-color: whitesmoke;
+}
+
+.menu{
+    list-style-type: none;
+    float: right;
+}
+.menu li{
+    float: left;
+}
+.menu li a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 1s, border-bottom 5s;
+    color: black;
+    background-color: darkcyan;
+    text-align: center;
+    padding: 17px;
+}
+ul li a:hover{
+    background-color: #F39A87;
+    border-bottom: 3px solid darkslateblue;
+    border-top: 3px solid darkslateblue;
+    border-right: 3px solid darkslateblue;
+    border-left: 3px solid darkslateblue;
+}
+
+/*========menu CSS=======*/
+
+
+
+/*========slider CSS=======*/
+.slider-section{
+    min-height: 450px;
+    background-image: url("../images/slider.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+.slider-content{
+    width: 30%;
+    background-color: rgba(120,40,30, .6);
+    position: absolute;
+    top: 200px;
+    padding: 15px;
+    color: white;
+
+}
+.slider-content h1{ margin-bottom: 10px; }
+.slider-content p{ text-align: justify; margin-bottom: 10px; }
+.slider-content hr{ margin-bottom: 10px; }
+.more {
+    float: right;
+    color: white;
+    text-decoration: none;
+}
+
+/*========slider CSS=======*/
+
+/*=======features CCS=======*/
+.features-section{
+    padding: 40px 0;
+}
+
+.circle{
+    height: 100px;
+    width: 100px;
+    border: 1px solid green;
+    border-radius:50px;
+}
+.features-content{
+     background-color: whitesmoke;
+     padding: 20px;
+     box-shadow: 0px 0px 30px 1px #F39A87;
+}
+.features-content h1{ margin-left: 5px;}
+.features-content p{
+    text-align: justify;
+    margin-left: 5px;
+}
+
+.pr-10{ padding-right: 10px;}
+.icon {
+    margin-top: 25px;
+    margin-left: 20%;
+}
+
+
+
+/*=======features CCS=======*/
+
+/*=======content Section=====*/
+
+.content-section{
+    padding-bottom: 40px;
+}
+.thumnil{
+    min-height: 300px;
+    border-bottom: 3px solid green;
+    box-shadow: 0 0 5px 1px lightgreen;
+}
+.thumnil img{ width: 100%; }
+.thumnil h3{ padding: 10px 0 0 10px;}
+.thumnil p{
+    padding: 3px 0 0 10px ;
+    margin-bottom: 5px;
+}
+.bed1,  .bed2{
+    float: right;
+    margin-right: 3%;
+}
+.thumnil-bottom{ padding: 10px 0 10px 10px;}
+
+
+
+/*=======content Section=====*/
+
+/*=======Top sidebar======*/
+
+.top-sidebar{
+    min-height: 300px;
+    background-color: lightgreen;
+    padding: 5%;
+    color: cornflowerblue;
+}
+.from-wrapper{
+    display: block;
+    margin-top: 10px;
+}
+.from-wrapper label{ width: 100%;}
+.from-input{
+    width: 100%;
+    height: 30px;
+}
+.mr-5per{ margin-right: 5%;}
+.search-btn{
+    width: 100%;
+    height: 30px;
+    border: 1px solid black;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.search-btn:hover{
+    background-color: rebeccapurple;
+    color: #F39A87;
+}
+.agent-iamge{
+    width: 100%;
+}
+.p-5{ padding: 4%}
+
+/*========footer Section======*/
+.footer-text{
+    text-align: center;
+    padding-top: 40px;
+    font-size: 20px;
+    color: black;
+
+}
+.footer-1{
+    min-height: 100px;
+    background-image: url("../images/contact.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+
+/*========footer Section======*/
+
+@media screen and (max-width: 576px) {
+    [class*='col-'] {
+        width: 100%;
+    }
+
+}
+
