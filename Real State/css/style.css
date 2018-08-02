@@ -1,7 +1,8 @@
-/* ========globsl CSS======*/
+/*======global CSS======*/
+
 *{
     margin: 0px;
-    padding: 0px;
+    border: 0px;
     box-sizing: border-box;
 }
 
@@ -18,32 +19,32 @@
 .col-11{ width: 91.66%; }
 .col-12{ width: 100%; }
 
-
 [class*='col-']{
     float: left;
-    /*border: 1px solid red;*/
+    /*border: 1px solid #EA320B;*/
 }
+
 .row:after{
     content: ' ';
     clear: both;
     display: block;
 }
+
 .container{
+
     width: 85%;
     height: auto;
     margin: 0 auto;
 }
-.pr-2per{ padding-right: 2%; }
+
 /*======global CSS======*/
 
-/*========menu CSS=======*/
-
+/*======menu CSS=======*/
 nav{
     min-height: 50px;
     padding: 5px 5px 5px 0;
     background-color: whitesmoke;
 }
-
 .menu{
     list-style-type: none;
     float: right;
@@ -56,9 +57,8 @@ nav{
     text-align: center;
     text-decoration: none;
     transition: background-color 1s, border-bottom 5s;
+    background-color: crimson;
     color: black;
-    background-color: darkcyan;
-    text-align: center;
     padding: 17px;
 }
 ul li a:hover{
@@ -67,81 +67,90 @@ ul li a:hover{
     border-top: 3px solid darkslateblue;
     border-right: 3px solid darkslateblue;
     border-left: 3px solid darkslateblue;
+
 }
+/*======menu CSS=======*/
 
-/*========menu CSS=======*/
-
-
-
-/*========slider CSS=======*/
+/*=====Slider CSS=======*/
 .slider-section{
-    min-height: 450px;
+    min-height: 350px;
     background-image: url("../images/slider.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
 }
 .slider-content{
-    width: 30%;
-    background-color: rgba(120,40,30, .6);
+    width: 25%;
+    background-color: rgba(340,30,10, .5);
     position: absolute;
-    top: 200px;
+    top: 135px;
     padding: 15px;
     color: white;
-
 }
-.slider-content h1{ margin-bottom: 10px; }
-.slider-content p{ text-align: justify; margin-bottom: 10px; }
-.slider-content hr{ margin-bottom: 10px; }
-.more {
+.slider-content h1{
+    margin-bottom: 7px;
+}
+.slider-content p{
+    margin-bottom: 7px;
+    text-align: justify;
+}
+.slider-content hr{
+    margin-bottom: 7px;
+}
+.more{
     float: right;
-    color: white;
     text-decoration: none;
+    color: #eeeeee;
 }
 
-/*========slider CSS=======*/
+/*=====Slider CSS=======*/
 
-/*=======features CCS=======*/
+/*====Feauters CSS=======*/
 .features-section{
-    padding: 40px 0;
+    padding: 30px 0;
 }
-
 .circle{
     height: 100px;
     width: 100px;
-    border: 1px solid green;
-    border-radius:50px;
+    border: 3px solid #A0270D;
+    border-radius: 50px;
 }
 .features-content{
-     background-color: whitesmoke;
-     padding: 20px;
-     box-shadow: 0px 0px 30px 1px #F39A87;
+    padding: 15px;
+    background-color: #F39A87;
 }
-.features-content h1{ margin-left: 5px;}
+.features-content h2{ margin-left: 5px; }
 .features-content p{
-    text-align: justify;
     margin-left: 5px;
+    text-align: justify;
 }
-
-.pr-10{ padding-right: 10px;}
-.icon {
-    margin-top: 25px;
-    margin-left: 20%;
+.pr-10{ padding-right: 10px; }
+.icon{
+    margin-top: 18px;
+    margin-left: 20px;
+    color: black;
 }
+.icon-2{
+    margin-top: 20px;
+    margin-left: 22px;
+    color: black;
+}
+.icon-3{
+    margin-top: 22px;
+    margin-left: 22px;
+    color: black;
+}
+/*====Feauters CSS=======*/
 
-
-
-/*=======features CCS=======*/
-
-/*=======content Section=====*/
+/*====Content CSS=======*/
 
 .content-section{
     padding-bottom: 40px;
 }
 .thumnil{
     min-height: 300px;
-    border-bottom: 3px solid green;
-    box-shadow: 0 0 5px 1px lightgreen;
+    border-bottom: 3px solid red;
+    box-shadow: 0 0 5px 1px crimson;
 }
 .thumnil img{ width: 100%; }
 .thumnil h3{ padding: 10px 0 0 10px;}
@@ -151,71 +160,58 @@ ul li a:hover{
 }
 .bed1,  .bed2{
     float: right;
-    margin-right: 3%;
+    margin-right: 5%;
 }
 .thumnil-bottom{ padding: 10px 0 10px 10px;}
+.pr-2per{ padding-right: 2%; }
 
 
 
-/*=======content Section=====*/
 
-/*=======Top sidebar======*/
 
-.top-sidebar{
-    min-height: 300px;
-    background-color: lightgreen;
+
+/*====Content CSS=======*/
+
+.sidebar{
+    min-height: 330px;
+    background-color: crimson;
     padding: 5%;
-    color: cornflowerblue;
+    color: white;
 }
-.from-wrapper{
+.form-wrapper{
     display: block;
     margin-top: 10px;
 }
-.from-wrapper label{ width: 100%;}
-.from-input{
+.form-wrapper label{
     width: 100%;
-    height: 30px;
 }
-.mr-5per{ margin-right: 5%;}
+.form-input{
+    width: 100%;
+    height: 25px;
+}
+.mr-5per{ margin-right: 5%}
 .search-btn{
     width: 100%;
+    margin-top: 15px;
     height: 30px;
-    border: 1px solid black;
+    border: 2px solid black;
     transition: .5s;
     cursor: pointer;
 }
-
 .search-btn:hover{
-    background-color: rebeccapurple;
-    color: #F39A87;
+    background-color: #F39A87;
+    color: darkslateblue;
 }
-.agent-iamge{
-    width: 100%;
-}
-.p-5{ padding: 4%}
+.agent-image{ width: 100%; }
+.p-5{ padding: 2%}
 
-/*========footer Section======*/
-.footer-text{
-    text-align: center;
-    padding-top: 40px;
-    font-size: 20px;
-    color: black;
-
-}
 .footer-1{
-    min-height: 100px;
+    min-height: 80px;
     background-image: url("../images/contact.jpg");
-    background-repeat: no-repeat;
     background-size: 100% 100%;
-
 }
-
-/*========footer Section======*/
-
-@media screen and (max-width: 576px) {
-    [class*='col-'] {
-        width: 100%;
-    }
-
+.footer-text{
+    padding-top: 40px;
+    color: black;
+    font-size: 15px;
 }
-
