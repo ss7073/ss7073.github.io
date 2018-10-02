@@ -1,0 +1,31 @@
+.bg-img{
+    width: 100%;
+    min-height: 3805px;
+    background: url("../images/bg.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+}
+.font{
+    font-size: 12px;
+}
+nav li:hover{
+    background-color: #ffa00f;
+}
+.slider-image{
+    width: 100%;
+    min-height: 400px;
+    background-color: rgba(12, 23, 88, .6);
+
+    background-repeat: no-repeat;
+    background-size: 100% 100% ;
+}
+.sider-mb-5{
+    margin-bottom: 100px;
+}
+
+
+.bg-black-f-s{
+    min-height: 80px;
+    background-color: #181818;
+}
