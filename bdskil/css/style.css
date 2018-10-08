@@ -1,0 +1,36 @@
+.min{
+    min-height: 145px;
+}
+.images{
+    height: 90px;
+    width: 90px;
+}
+.bg{
+    background-color: #dedede;
+}
+.bg-1{
+    background-color: #00a350;
+}
+.min-1{
+    min-height: 180px;
+}
+.bg-2{
+    background-color: #108c55;
+}
+.min-3{
+    min-height: 35px;
+}
+.thm img{
+
+    transition: all .2s ease-in-out;
+}
+.thm:hover img{
+    opacity: .6;
+}
+.thm img:hover{
+    opacity: 1;
+    box-shadow: 0 0 7px rgba(0, 0, 0, .5);
+}
+.c{
+    background-color: #ffde00;
+}
